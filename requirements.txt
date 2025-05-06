@@ -1,0 +1,15 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+pymysql
+mysql-connector-python
+pydantic
+python-jose[cryptography]
+passlib[bcrypt]
+python-dotenv
+pydantic[email]
+
+#testing
+httpx
+pytest
+pytest-asyncio

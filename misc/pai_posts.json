@@ -1,0 +1,65 @@
+[
+    {
+        "caption": "DREAM BIG, ACHIEVE MORE! \ud83d\ude80\ud83d\udcbb What's holding you back from coding your dream? Share with us in the comments below and let's make it happen together! #CodeYourDream #CodingGoals #FutureOfWork",
+        "hash_tags": [
+            "#CodeYourDream",
+            "#CodingGoals",
+            "#FutureOfWork"
+        ],
+        "media": {
+            "type": "image_or_video",
+            "description": {
+                "image": "A young programmer working on a laptop with a cityscape in the background, symbolizing the dream of making a difference.",
+                "video_storyboard": "A short video showcasing different people from various backgrounds learning to code and achieving their goals.",
+                "voiceover_or_song": "Voiceover: 'Believe you can and you're halfway there.' - Theodore Roosevelt",
+                "tips": [
+                    "Use warm colors in the image to evoke feelings of optimism and motivation.",
+                    "Showcase a diverse group of people coding together to promote inclusivity.",
+                    "Incorporate visual elements that represent the dream of making a difference, such as a globe or a cityscape."
+                ]
+            }
+        }
+    },
+    {
+        "caption": "CODING IS NOT JUST ABOUT WRITTING CODE... \ud83e\udd2f It's about solving problems, making a difference, and creating the future! Share your favorite coding accomplishment with us and let's celebrate our successes together! #CodeYourDream #CodingGoals #FutureOfWork",
+        "hash_tags": [
+            "#CodeYourDream",
+            "#CodingGoals",
+            "#FutureOfWork"
+        ],
+        "media": {
+            "type": "image_or_video",
+            "description": {
+                "image": "A programmer in a futuristic laboratory, surrounded by screens and coding tools, with a cityscape outside, symbolizing innovation and progress.",
+                "video_storyboard": "A short video showcasing different examples of how coding has improved people's lives, such as accessibility features or health monitoring systems.",
+                "voiceover_or_song": "Voiceover: 'The future belongs to those who believe in the beauty of their dreams.' - Eleanor Roosevelt",
+                "tips": [
+                    "Use a mix of bright and bold colors to represent innovation and progress.",
+                    "Showcase the impact of coding on people's lives, such as testimonials or statistics.",
+                    "Incorporate futuristic elements, such as holographic displays or robots, to create a sense of excitement."
+                ]
+            }
+        }
+    },
+    {
+        "caption": "WHAT'S YOUR CODED GOAL FOR THE FUTURE? \ud83d\udcc8\ud83d\ude80 Share with us in the comments below and let's hold each other accountable! #CodeYourDream #CodingGoals #FutureOfWork",
+        "hash_tags": [
+            "#CodeYourDream",
+            "#CodingGoals",
+            "#FutureOfWork"
+        ],
+        "media": {
+            "type": "image_or_video",
+            "description": {
+                "image": "A young programmer looking at a laptop with a cityscape in the background, symbolizing the dream of making a difference.",
+                "video_storyboard": "A short video showcasing people from different backgrounds working together towards a common goal, such as building a sustainable community or creating an innovative product.",
+                "voiceover_or_song": "Voiceover: 'The best way to predict the future is to invent it.' - Alan Kay",
+                "tips": [
+                    "Use soft colors in the image to evoke feelings of calmness and focus.",
+                    "Showcase people from different backgrounds working together, promoting inclusivity and teamwork.",
+                    "Incorporate visual elements that represent progress and innovation, such as greenery or futuristic architecture."
+                ]
+            }
+        }
+    }
+]
