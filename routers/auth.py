@@ -11,12 +11,19 @@ router = APIRouter()
 
 
 
-@router.post("/signup", response_model=UserOut)
+@router.post("/signup")
 def signup(
     user: UserCreate,
     db: Session = Depends(get_db),
 ):
-    return register(db=db, user=user)
+    new_user = register(db=db, user=user)
+    if(new_user):
+        return new_user
+         
+    return  HTTPException(
+        status_code=status.HTTP_400_BAD_REQUEST,
+        detail="Could not register ",
+    )
 
 @router.post("/login")
 def signin(user: UserLogin, db: Session = Depends(get_db)):

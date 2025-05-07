@@ -7,8 +7,10 @@ from typing import List
 from promts.generate_ideas_promt import generate_idea_prompt
 from promts.generate_posts_promt import generate_posts_prompt
 from datetime import datetime, timedelta
-from llm import call_llm_pai
+from .llm_service import call_llm
 
+
+llm_caller = call_llm()
 def create_post(db: Session, user_id: int, post_data: PostCreate):
     post = Post(
         user_id=user_id,
@@ -54,9 +56,9 @@ def delete_post(db: Session, user_id: int, post_id: int):
 def generate_idea(t3_info: PostIdea, business_info: BusinessProfileCreate):
     # Call the function
     messages = generate_idea_prompt(t3_info, business_info)
-    return call_llm_pai(messages)
+    return llm_caller(messages)
 
 def generate_posts(selected_ideas,t3_info: PostIdea, business_info: BusinessProfileCreate):
     # Call the function
     messages = generate_posts_prompt(selected_ideas,t3_info, business_info)
-    return call_llm_pai(messages)
+    return llm_caller(messages)

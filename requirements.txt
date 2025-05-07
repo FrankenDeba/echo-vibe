@@ -8,6 +8,8 @@ python-jose[cryptography]
 passlib[bcrypt]
 python-dotenv
 pydantic[email]
+groq
+requests
 
 #testing
 httpx

@@ -1,8 +1,8 @@
 import requests
 import json
-from constants import PAI_API_KEY, PAI_API_END_POINT, REPORT_FORMAT
+from constants import PAI_API_KEY, PAI_API_END_POINT, REPORT_FORMAT, GROQ_API_KEY, GROQ_LLM_MODEL
 from transformers import post_text_transformer
-
+from groq import Groq
 
 def call_llm_pai(messages):
         # file_path = "pai_data.json"
@@ -72,3 +72,20 @@ def call_llm_pai(messages):
         #     print("Unsupported report format")
     
         # return full_text
+        
+
+def call_llm_groq(messages: list):
+    client = Groq(
+        api_key=GROQ_API_KEY
+    )
+    completion = client.chat.completions.create(
+        model=GROQ_LLM_MODEL,
+        messages= messages,
+        temperature=1,
+        max_completion_tokens=1520,
+        top_p=1,
+        stream=False,
+        response_format={"type": "json_object"},
+        stop=None,
+    )
+    return json.loads(completion.choices[0].message.content)
