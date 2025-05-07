@@ -1,17 +1,28 @@
-PAI_API_KEY = "psai_0253787ee1b0437d9bd47ffa83107b6c"
-PAI_API_END_POINT = "https://pai-api.thepsi.com/api/chat"
-REPORT_FORMAT = "html"
+import os
+from dotenv import load_dotenv
 
-DB_USER="root"
-DB_PASSWORD=""
-DB_HOST="localhost"
-DB_NAME="echo-dev"
+# Load environment variables from .env file
+load_dotenv()
 
-SECRET_KEY = "echo-vibe-is-awesome"
-ALGORITHM = "HS256"
-ACCESS_TOKEN_EXPIRE_MINUTES = 120
+# Access them
 
-GROQ_API_KEY = "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"
-GROQ_LLM_MODEL = "meta-llama/llama-4-scout-17b-16e-instruct"
+debug = os.getenv("DEBUG") == "True"
 
-LLM_SERVICE = "GROQ"
+
+PAI_API_KEY = os.getenv("PAI_API_KEY")
+PAI_API_END_POINT = os.getenv("PAI_API_END_POINT")
+REPORT_FORMAT = os.getenv("REPORT_FORMAT")
+
+DB_USER= os.getenv("DB_USER")
+DB_PASSWORD= os.getenv("DB_PASSWORD")
+DB_HOST= os.getenv("DB_HOST")
+DB_NAME= os.getenv("DB_NAME")
+
+SECRET_KEY = os.getenv("SECRET_KEY")
+ALGORITHM = os.getenv("ALGORITHM")
+ACCESS_TOKEN_EXPIRE_MINUTES = os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES")
+
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+GROQ_LLM_MODEL = os.getenv("GROQ_LLM_MODEL")
+
+LLM_SERVICE = os.getenv("LLM_SERVICE")
