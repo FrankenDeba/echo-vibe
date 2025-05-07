@@ -75,23 +75,38 @@ function RegistrationForm() {
           margin="normal"
           required
         />
-        <FormControl component="fieldset" margin="normal">
-          <FormLabel component="legend">Gender</FormLabel>
-          <RadioGroup
-            row
-            name="gender"
-            value={form.gender}
-            onChange={handleChange}
+        <div
+          style={{
+            display: "flex",
+          }}
+        >
+          <FormControl
+            component="fieldset"
+            style={{
+              textAlign: "left",
+            }}
           >
-            <FormControlLabel value="male" control={<Radio />} label="Male" />
-            <FormControlLabel
-              value="female"
-              control={<Radio />}
-              label="Female"
-            />
-            <FormControlLabel value="other" control={<Radio />} label="Other" />
-          </RadioGroup>
-        </FormControl>
+            <FormLabel component="legend">Gender</FormLabel>
+            <RadioGroup
+              // column
+              name="gender"
+              value={form.gender}
+              onChange={handleChange}
+            >
+              <FormControlLabel value="male" control={<Radio />} label="Male" />
+              <FormControlLabel
+                value="female"
+                control={<Radio />}
+                label="Female"
+              />
+              <FormControlLabel
+                value="other"
+                control={<Radio />}
+                label="Other"
+              />
+            </RadioGroup>
+          </FormControl>
+        </div>
         <TextField
           fullWidth
           label="Phone"
