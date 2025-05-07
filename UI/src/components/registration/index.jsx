@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import {
   Box,
   TextField,
@@ -13,6 +14,7 @@ import {
 } from "@mui/material";
 
 function RegistrationForm() {
+  const navigate = useNavigate();
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -35,6 +37,7 @@ function RegistrationForm() {
     e.preventDefault();
     // Handle form submission logic here
     alert("Form submitted!");
+    navigate("/business_desc");
   };
 
   return (
