@@ -17,7 +17,7 @@ class BusinessProfile(Base):
     tagline = Column(String(255), nullable=True)
     website = Column(String(255), nullable=True)
     location = Column(String(100), nullable=True)
-    uniqueness = Column(String(100), nullable=True)
+    uniqueness = Column(Text, nullable=True)
     created_at = Column(DateTime, default=datetime.now())
 
     user = relationship("User", back_populates="business_profile")

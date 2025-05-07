@@ -13,7 +13,8 @@ def signup(user: UserCreate, db: Session):
     db.add(new_user)
     db.commit()
     db.refresh(new_user)
-    return new_user
+    access_token = create_access_token(data={"sub": str(new_user.id)})
+    return {"access_token": access_token, "token_type": "bearer", "user": new_user}
 
 def login(user: UserCreate, db: Session):
     db_user = db.query(User).filter(User.email == user.email).first()
